@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background:#00FFFF;
+    background: url('Anime3.jpg');
+    height: 550px;
+    text-align: center;
+    font-size: 100px;
+    color: #C71585;
+    padding-top: 0px;
+}
+
+nav {
+    background:#FFC0CB;
+    height: 80px;
+}
+
+section {
+    background: #EE82EE;
+    height: 100px;
+}
+
+footer {
+    background: #FF69B4;
+    height: 80px;
+}

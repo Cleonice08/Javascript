@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula17-Atividade</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+            let posicao1 = 0;
+            estudos = [];
+            repetir = 'sim';
+
+            while(repetir == 'sim'){
+                Materia = prompt("Digite a matéria:");
+
+                if(estudos.length > 0) {
+                    let naoTemRepetido = true;
+                    for(let posicao = 0; posicao < estudos.length; posicao++){
+                        if(estudos[posicao] == Materia){
+                            alert("Matéria já cadastrada: " + estudos[posicao]);
+
+                            naoTemRepetido = false;
+                        }
+                    }
+
+                    if(naoTemRepetido)
+                        estudos.push(Materia);
+                }
+                else
+                  estudos.push(Materia);
+
+                repetir = prompt('Deseja repetir');
+            }
+            
+            for(let posicao = 0; posicao < estudos.length; posicao++){
+                document.write(estudos[posicao] + '<br />')
+            }
+        </script>
+    </head>
+<body>
+</body>
+</html>

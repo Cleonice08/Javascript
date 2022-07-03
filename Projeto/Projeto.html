@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Projeto</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="ProjetoCSS.css" />
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="ProjetoJS.js"></script>
+</head>
+
+<body>
+    <header>
+    </header>
+    <section>
+
+        <div class="row">
+            <div class="card text-dark  mb-3 card-color col-6" style="max-width: 80rem;">
+                <font size="5" face="Arial"> Cadastro de Livros </font> <br />
+                <div class="card-body">
+                    <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                </div>
+                
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1 ">📚</span>
+                        <input type="number" id="codigo" placeholder="Código" />
+                    </div>
+                    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">📚</span>
+                        <input type="text" id="nome" placeholder="Nome do Livro" />
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">📚</span>
+                        <input type="text" id="genero" placeholder="Genêro" />
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">📚</span>
+                        <input type="text" id="autor" placeholder="Autor" />
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">📚</span>
+                        <input type="text" id="valor" placeholder="Valor" />
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">📚</span>
+                        <input type="number" id="quantidade" placeholder="Quantidade" />
+                    </div>
+
+                    <button id="btSalvar" class="btn btn-dark">Salvar</button>
+
+                    <br />
+                    <br />
+                    <button id="btAjax" class="btn btn-success">Ajax</button>
+                    <span id="spAjax"></span>
+
+                    <br />
+                    <br />
+                    <button id="btIP" class="btn btn-success">IP</button>
+                    <span id="spIP"></span>
+
+                </div>
+                    
+            </div>
+
+            <div class="card text-dark  mb-3 card-color col-6" style="max-width: 80rem;">
+                <font size="5" face="Arial"> Descrição </font> <br />
+                <div class="card-body">
+                    <table class="table table-striped">
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Código</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Genêro</th>
+                                <th scope="col">Autor</th>
+                                <th scope="col">Valor</th>
+                                <th scope="col">Quantidade</th>
+                                <th scope="col"></th>
+                                <tr scope="col"></tr>
+                            </tr>
+                        </thead>
+                        <tbody id="tbLivros">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+    </footer>
+
+</body>
+
+</html>

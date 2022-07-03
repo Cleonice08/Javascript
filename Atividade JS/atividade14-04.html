@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atividade</title>
+        <meta charset="UTF-8">
+        <script>
+
+           let valores = [];
+           function calcular() {
+            let altura = document.getElementById('mensagem2').value;
+            let peso = document.getElementById('mensagem1').value;
+            let IMC;
+            let li = "";
+            let mensagem = '';
+
+                IMC = peso / (altura * altura);
+                
+                if(IMC < 18.5) {
+                    mensagem = "Voce esta abaixo do peso!";
+                }else if(IMC >= 18.5 && IMC < 25){
+                    mensagem = "Peso normal!";
+                }else if(IMC >= 25 && IMC < 30) {
+                    mensagem = "Acima do peso!";
+                }else if(IMC >= 30 && IMC < 35) {
+                    mensagem = "Obesidade 1!";
+                }else if(IMC >= 35 && IMC < 40) {
+                    mensagem = "Obesidade 2!";
+                }else {
+                    mensagem = "Obesidade 3!";
+                }
+                        
+                valores.push(IMC, mensagem);
+                for(let i = 0; i < valores.length; i++) {
+                    if(valores[i] && !isNaN(valores[i]))
+                        li += "<li>" + valores[i] + "-" + valores[i+1] + "</li>";
+                }
+
+                console.log(li)
+                document.getElementById('lista').innerHTML = li;
+                mensagem = "";
+                
+            }
+        
+        
+        
+        </script>
+    </head>
+    <body>
+        <input type="text" id="mensagem1" placeholder="Digite seu Peso:"/>
+        <input type="text" id="mensagem2" placeholder="Digite sua Altura:" />
+        <br/>
+        <br/>
+        <button id="btInserir" onclick="calcular()">Inserir</button>
+        <ul id="lista">
+
+        </ul>
+    </body>
+</html>
